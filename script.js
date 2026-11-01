@@ -1,7 +1,6 @@
 function isSameType(value1, value2) {
   //your js code here
-	if(parseInt(value1) == parseInt(value2)) return true;
-	else if(value1.toString() == value2.toString()) return true;
+	if(typeof value1 == typeof value2) return true;
 	else if(Number.isNaN(value1) == Number.isNaN(value2)) return true;
 	else return false;
 } 
