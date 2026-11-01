@@ -1,11 +1,10 @@
 function isSameType(value1, value2) {
   //your js code here
-	if(value1 == value2) return true;
+	if(parseInt(value1) == parseInt(value2)) return true;
+	else if(value1.toString() == value2.toString()) return true;
+	else if(Number.isNaN(value1) == Number.isNaN(value2)) return true;
 	else return false;
-	
-	if(Number.isNaN(value1) == Number.isNaN(value1)) return true;
-	else return false;
-}
+} 
 
 // do not change the code below.
 let value1 = prompt("Enter Start of the Range.");
